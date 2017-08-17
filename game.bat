@@ -1,5 +1,5 @@
 @echo off
-title BITHACKER Alpha v 0.1
+title BITHACKER Alpha v 0.2
 color a
 set mb=0
 set cpu=1
@@ -13,7 +13,7 @@ set ramp=2
 cls
 set /a gain=%cpu%+%ram%
 echo ----------------------------
-echo    BITHACKER Alpha v 0.1
+echo    BITHACKER Alpha v 0.2
 echo ----------------------------
 echo HACKED DATA: %mb% MB
 echo CPU: %cpu% GHZ
@@ -30,14 +30,13 @@ echo BUY [R]AM
 echo [S]ELL DATA
 echo ----------------------------
 echo MADE BY NOVACOOP INDUSTRIES
-echo H00_STR, FUKI
+echo H00_STR, FUKI, BELA333
 echo ----------------------------
-set /p co=COMMAND INPUT:
-if %co%==wsegewe goto E
-if %co%==H goto H
-if %co%==C goto C
-if %co%==R goto R
-if %co%==S goto S
+choice /C hcrs /n /m "COMMAND INPUT:"
+if %errorlevel%==1 goto H
+if %errorlevel%==2 goto C
+if %errorlevel%==3 goto R
+if %errorlevel%==4 goto S
 :E
 echo ERROR! UNKNOWN COMMAND!
 echo PRESS ANY KEY TO CONTINUE...
