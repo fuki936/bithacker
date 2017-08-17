@@ -17,7 +17,7 @@ echo    BITHACKER Alpha v 0.2
 echo ----------------------------
 echo HACKED DATA: %mb% MB
 echo CPU: %cpu% GHZ
-echo RAM: %ram% MB
+echo RAM: %ram% GB
 echo ----------------------------
 echo BITCOIN: %bitcoin%.%satoshi% BTC
 echo CPU PRICE: %cpup% BTC
